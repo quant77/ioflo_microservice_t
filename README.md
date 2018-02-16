@@ -1,5 +1,4 @@
 # ioflo_microservice_t
-# ioflo_microservice_t
 How to setup the environment and run an app: <br />
 Load ioflo_microservice_example as zip, extract it and put into the folder <br />
 $ cd folder <br />
@@ -54,7 +53,11 @@ signer="amHoV3D1l3r1CyJVRisyM1joNtaEaHA6sa4uwmV6E601JWQ2HMbhxdxhxzSp8lyMMxq4QKY9
 then for GET request select GET: <br />
 and change url to http://localhost:8000/reputee/user_name and click SEND
 
+for tests: <br />
+$ microservice <br /> 
+in separate tab cd to tests, and then run user_tests.py using python3
 
+Non-unique rid's are being dropped(this is also reflected in one of the test cases)
 
 
 
