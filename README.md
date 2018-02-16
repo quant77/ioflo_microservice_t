@@ -7,14 +7,14 @@ $ pip3 install -e .   <br />
 Open new terminal and do: <br />
 $ microservice <br />
 in python console, run a following:<br />
->>> import libnacl <br />
->>> from microservice.help.helping import makeUserReg <br />
->>> seed = libnacl.randombytes(libnacl.crypto_sign_SEEDBYTES) <br />
->>> verkey, sigkey = libnacl.crypto_sign_seed_keypair(seed) <br />
->>> signature, registration = makeUserReg(verkey, sigkey,username='user_name') <br />
+>>> import libnacl 
+>>> from microservice.help.helping import makeUserReg 
+>>> seed = libnacl.randombytes(libnacl.crypto_sign_SEEDBYTES) 
+>>> verkey, sigkey = libnacl.crypto_sign_seed_keypair(seed)
+>>> signature, registration = makeUserReg(verkey, sigkey,username='user_name') 
 get signature and registration:  <br />
->>> signature  <br />
->>> print(registration)<br />
+>>> signature 
+>>> print(registration)
 {  <br />
   "username": "user_name", <br />
   "key": "u3gMTa9qlH1NgMtUyzvFtLVXT8quNk64Po5WfI_Zn2s=", <br />
