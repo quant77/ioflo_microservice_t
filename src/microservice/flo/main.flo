@@ -1,0 +1,26 @@
+# Main Flow
+
+house main
+
+  framer setup be active
+    frame startup
+      print Starting Server
+      bid start server
+      bid start worker
+
+  init main.server.test to False
+  init main.server.preload to True
+  init main.server.fakeHidKind to False
+  #init main.server.keepDirPath to "pathexpression"
+  #init main.server.dbDirPath to "pathexpression"
+
+
+  framer server be inactive via .main.server
+    frame server
+      do microservice server open at enter
+      do microservice server service
+      do microservice server close at exit
+
+  framer worker be inactive via .main.worker at 0.5 
+    frame worker
+      do reputation worker
